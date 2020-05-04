@@ -1,0 +1,52 @@
+.section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+.box:nth-child(1) {
+  top: 50px;
+  left: 50px;
+  z-index: 3;
+}
+
+.box:nth-child(2) {
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.box:nth-child(3) {
+  top: 150px;
+  left: 150px;
+  z-index: 2;
+}
+
+.dodger {
+  background-color: #1789fc;
+}
+
+.topaz {
+  background-color: #ffd07b;
+}
+
+.gunmetal {
+  background-color: #2b2d42;
+}
+
+.pantone {
+  background-color: #ef233c;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.palered {
+  background-color: palevioletred;
+}

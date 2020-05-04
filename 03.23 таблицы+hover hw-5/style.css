@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* вырванивание элемента по вертикали и горизонт родитель табле роу а на ребенка табле сел и вертикал алайн миддл   */
+
+/* будет съехавшая из-за дефолтных свойств */
+
+/* тейбл роу - строка,
+тейбл селл - колонка  */
+
+/* tr не работает бекграунд */
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #000;
+}
+
+.table thead {
+  text-align: left;
+}
+
+.table th,
+.table td {
+  border: 1px solid #000;
+  border-right: 0;
+}
+
+.table tr:first-child th,
+.table tr:last-child th {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.table th:first-child {
+  border-left: 0;
+}
+
+.table thead tr {
+  background: #d4dde4;
+}
+
+.table tbody tr:nth-child(even) {
+  background: gray; /* лучше вешать на th */
+}
+
+.table td {
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.table td:last-child {
+  border-right: 0;
+}

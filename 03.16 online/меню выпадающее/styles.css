@@ -1,0 +1,44 @@
+:root {
+  --main-width: 600px;
+  --primary-dark-color: #424242;
+  --primary-light-color: #ffffff;
+  --accent-color: #e91e63;
+  --font-stack: "Roboto", Tahoma, sans-serif;
+  --black-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  --base-line-height: 1.5;
+  --base-font-size: 16px;
+}
+
+body {
+  background-color: var(--primary-light-color);
+  font-family: var(--font-stack);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+.container {
+  max-width: var(--main-width);
+  margin: auto;
+}
+
+.article {
+  padding: 20px;
+  color: var(--primary-dark-color);
+  box-shadow: var(--black-shadow);
+}
+
+.article a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-light-color);
+  background-color: var(--primary-dark-color);
+}
+
+.article a:hover {
+  background-color: var(--accent-color);
+}

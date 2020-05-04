@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -15px;
+}
+
+[class*="col-"] {
+  padding: 0 15px 15px;
+}
+
+.col-1 {
+  flex: 1 0 8.333%;
+  max-width: 8.333%;
+}
+
+.col-2 {
+  flex: 1 0 16.666%;
+  max-width: 16.666%;
+}
+
+.col-3 {
+  flex: 1 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 1 0 33.333%;
+  max-width: 33.333%;
+}
+
+.col-5 {
+  flex: 1 0 41.666%;
+  max-width: 41.666%;
+}
+
+.col-6 {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 1 0 58.333%;
+  max-width: 58.333%;
+}
+
+.col-8 {
+  flex: 1 0 66.666%;
+  max-width: 66.666%;
+}
+
+.col-9 {
+  flex: 1 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 1 0 83.333%;
+  max-width: 83.333%;
+}
+
+.col-11 {
+  flex: 1 0 91.666%;
+  max-width: 91.666%;
+}
+
+.col-12 {
+  flex: 1 0 100%;
+  max-width: 100%;
+}

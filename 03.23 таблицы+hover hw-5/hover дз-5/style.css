@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card {
+  width: 33.33%;
+}
+
+.card:hover .hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .card-footer {
+  background: #1abc9c;
+}
+
+.card-img {
+  position: relative;
+  height: 281px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hover {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hover ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hover li + li {
+  padding-left: 10px;
+}
+
+.hover-row {
+  max-width: 167px;
+}
+
+button {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 0;
+  padding: 10px;
+}
+
+button:hover {
+  background: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-cart {
+  width: 100%;
+}
+
+card-img {
+  background-image: url(/blue-tshirt.jpg);
+}
